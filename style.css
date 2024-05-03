@@ -1,0 +1,174 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #001F3F;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.container {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #FFDB58;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 70px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li.selected::before {
+    content: "-";
+    color: #333333; /* Set the color of the dash */
+    margin-right: 5px; /* Adjust the spacing between the dash and the text */
+}
+
+.sidebar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #001F3F;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+    color: #FFFFFF;
+    background-color: #001F3F;
+    padding: 20px;
+    margin-left: 20px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+header {
+    background-color: #001F3F;
+    color: #333333;
+    border-bottom: 2px solid black;
+    margin-left: -30px;
+    margin-right: 20px;
+    padding: 10px 0;
+    width: 110%; /* Make the header span the entire width */
+}
+
+#chatRoom {
+    width: 200px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    resize: none;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+}
+
+#log {
+    width: 800px;
+    height: 600px;
+    resize: none;
+    margin-bottom: 10px;
+    display: block; /* Ensures it's a block-level element */
+}
+
+#input{
+    display: inline-block; /* Ensures they are block-level elements */
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
+}
+#changeRoomCode{
+    display: inline-block;
+    padding: 5px;
+    margin-right: 100px;
+    margin-top: -250px;
+    top: 760px;
+    right: 25px;
+    position: absolute;
+    width: 180px
+}
+#roomCode{
+    position: absolute;
+    top: 160px;
+    right: 20px
+}
+#available{
+    top: 167px;
+    right: 50px;
+    position: absolute;
+}
+#current{
+    top: 150px;
+    right: 90px;
+    position: absolute;
+}
+
+#changeButton{
+    float: right;
+    margin-top: -245px;
+}
+#refreshButton{
+    right: 195px;
+    margin-top: -218px;
+    position: absolute;
+}
+
+

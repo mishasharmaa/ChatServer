@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<div class="sidebar">
+  <a class="active" href="index.html">Active Rooms</a>
+  <a href="about.html">About</a>
+</div>
+
+<main>
+  <div class="container">
+      <header>
+        <h1>Chat Server</h1>
+      </header>
+    <div class="chat">
+      <textarea title="Chat Log" style="width: 800px; height: 600px;" id="log" readonly></textarea>
+      <p id="current"><b>Current room: </b></p>
+      <table border="0" id="roomCode">
+        <tbody>
+        </tbody>
+      </table>
+      <input title="Chat Input" id="input" placeholder="Type Here... " style="width: 795px" type="text"/>
+      <input title="Chat Input" id="changeRoomCode" placeholder="Enter Room Code" type="text"/>
+      <button onclick="changeRoom()" id="changeButton">Change Room</button>
+      <button onclick="refreshRooms()" id="refreshButton">Refresh Room list</button>
+      <p id="available">Available Chat Rooms</p>
+      <textarea title="Chat Log" style="width: 300px; height: 300px;" id="chatRoom" readonly></textarea>
+      <script src="js/main.js"></script>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>copyright &copy; CSCI 2020U - Winter 2024</p>
+</footer>
+</body>
+</html>
