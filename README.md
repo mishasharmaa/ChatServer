@@ -2,4 +2,7 @@
 
 We were asked to make a chat server where multiple users can chat in one room or create multiple different rooms and chat in each one. 
 
-We used JavaScript to help implement the code requirements and HTML and CSS to make the web page look nicer. 
+# Image 1
+
+<img width="1440" alt="ChatServer Active Rooms" src="https://github.com/mishasharmaa/ChatServer/assets/148586686/779e0e6e-9021-4765-ae56-84c5d63e4b71">
+
